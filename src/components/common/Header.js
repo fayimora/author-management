@@ -6,12 +6,18 @@ const Header = () => {
     <nav>
       <IndexLink to="/" activeClassName="active">Home</IndexLink>
       {" | "}
-      <Link to="/courses" activeClassName="active">Courses</Link>
+      <NavLink to="courses">Courses</NavLink>
       {" | "}
-      <Link to="/about" activeClassName="active">About</Link>
-
+      <NavLink to="about">About</NavLink>
     </nav>
   );
 };
+
+const NavLink = (props) => {
+  return (
+    <Link {...props} activeClassName="active"/>
+  )
+}
+
 
 export default Header;
