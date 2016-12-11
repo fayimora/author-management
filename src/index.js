@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import {Router, browserHistory} from 'react-router';
 import routes from './routes';
 import configureStore from './store/configureStore';
-import Provider from 'react-redux';
+import {Provider} from 'react-redux';
 import '../node_modules/bootstrap/dist/css//bootstrap.css';
 
 const store = configureStore();
