@@ -16,8 +16,7 @@ const Header = () => {
 const NavLink = (props) => {
   return (
     <Link {...props} activeClassName="active"/>
-  )
-}
-
+  );
+};
 
 export default Header;
