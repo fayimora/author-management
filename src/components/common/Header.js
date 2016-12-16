@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, IndexLink } from 'react-router';
+import { IndexLink } from 'react-router';
+import NavLink from './NavLink';
 
 const Header = () => {
   return (
@@ -10,12 +11,6 @@ const Header = () => {
       {" | "}
       <NavLink to="about">About</NavLink>
     </nav>
-  );
-};
-
-const NavLink = (props) => {
-  return (
-    <Link {...props} activeClassName="active"/>
   );
 };
 
