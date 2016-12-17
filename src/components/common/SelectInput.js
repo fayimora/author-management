@@ -27,5 +27,4 @@ SelectInput.propTypes = {
   options: PropTypes.arrayOf(PropTypes.object)
 };
 
-
 export default SelectInput;
