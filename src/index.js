@@ -6,7 +6,7 @@ import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
 import {loadCourses} from './actions/courseActions';
 import {loadAuthors} from './actions/authorActions';
-import 'bootstrap/dist/css/bootstrap.css';
+import './styles/app.scss';
 
 const store = configureStore();
 store.dispatch(loadCourses());
