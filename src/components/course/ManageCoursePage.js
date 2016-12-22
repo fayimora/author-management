@@ -19,7 +19,7 @@ class ManageCoursePage extends React.Component {
   componentWillReceiveProps(nextProps) {
     const courseIdNotChanged = this.props.course.id != nextProps.course.id;
     if(courseIdNotChanged){
-      this.setState({course: Object.assign({}, nextProps.course)})
+      this.setState({course: Object.assign({}, nextProps.course)});
     }
   }
 
@@ -60,7 +60,7 @@ ManageCoursePage.contextTypes = {
 
 function getCourseById(courses, id) {
   const courseArr = courses.filter(course => course.id === id);
-  return courseArr.length === 0 ? null : courseArr[0]
+  return courseArr.length === 0 ? null : courseArr[0];
 }
 
 function mapStateToProps(state, ownProps) {
