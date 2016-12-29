@@ -12,9 +12,6 @@ export class ManageCoursePage extends React.Component {
       errors: {},
       saving: false
     };
-
-    this.updateCourseState = this.updateCourseState.bind(this);
-    this.saveCourse = this.saveCourse.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -24,14 +21,14 @@ export class ManageCoursePage extends React.Component {
     }
   }
 
-  updateCourseState(event) {
+  updateCourseState = (event) => {
     const field = event.target.name;
     let course = this.state.course;
     course[field] = event.target.value;
     return this.setState({course: course});
   }
 
-  saveCourse(event) {
+  saveCourse = (event) => {
     event.preventDefault();
     this.setState({saving: true});
     this.props.actions.saveCourse(this.state.course)
